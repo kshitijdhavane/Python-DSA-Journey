@@ -1,0 +1,120 @@
+append() is used to add an element at the end of the list
+
+append() modifies the existing list and returns None.
+
+append(x)
+→ adds x as ONE element at the end 
+[1, 2, 3, [4, 5]]
+             ↑
+        one element
+
+
+extend(iterable)
+→ adds the elements inside it one by one 
+[1, 2, 3, 4, 5]
+
+
+1) Insert() -But what if you want to add an element at a specific position?
+That's where insert() comes in.
+
+syntax- arr.insert(index, value)
+
+Python allows insert() with an index beyond the current length; the element is placed at the end.
+
+2) Remove() - remove() deletes an element by value.
+There were two 20s, but only the first occurrence was removed.
+Before:
+[10, 20, 30, 20]
+     ↑
+   first 20
+
+remove(20)
+
+After:
+[10, 30, 20]
+
+Syntax:
+         arr.remove(value)
+
+# remove() vs pop()
+arr.pop(index) -removes and returns the element at that index
+
+remove(value) → removes by VALUE
+pop(index)    → removes by INDEX
+
+When pop() has no index, it removes the last element.
+
+
+#1. sort()
+sort() arranges the list in ascending order by default.
+syntax- arr.sort()
+
+You can also sort descending:
+arr.sort(reverse=True)
+
+#2 reverse() - simply reverses the current list
+
+
+# Index()
+Finds the index of the first occurrence of a value.
+
+arr = [10, 20, 30, 20]
+print(arr.index(20))
+
+Output: 1
+
+#count()
+Counts how many times a value occurs.
+arr = [10, 20, 30, 20, 20]
+
+print(arr.count(20))
+
+Output:3 
+
+# in
+Checks whether a value exists in the list.      || You can also use not in:
+arr = [10, 20, 30]
+print(20 in arr)
+print(50 in arr)
+
+Output:
+True
+False
+
+
+
+##List comprehension 
+- is a concise way to create a new list from an existing iterable, such as a list or a range(), optionally transforming or filtering its elements
+
+Three ways to use list comprehension
+A. Transform values
+numbers = [1, 2, 3, 4]
+result = [n * 10 for n in numbers]
+# [10, 20, 30, 40]
+
+B. Filter values
+Use this when you want only elements that satisfy a condition.
+numbers = [1, 2, 3, 4, 5, 6]
+result = [n for n in numbers if n % 2 == 0]
+# [2, 4, 6]
+
+C. Transform based on a condition
+Use this when you want every element to produce a value, but the value depends on a condition.
+numbers = [1, 2, 3, 4]
+result = [n if n % 2 == 0 else 0 for n in numbers]
+# [0, 2, 0, 4]
+
+
+
+
+### 2D Lists in Python
+A 2D list is a list containing other lists. Think of it like a table with rows and columns.
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+
+To find the sum we use --- accumulator --- sum +=num 
+To find the count we use --- Counter --- count+= 1     
