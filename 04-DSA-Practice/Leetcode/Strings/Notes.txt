@@ -1,0 +1,16 @@
+1. What are alphanumeric characters?
+--- Alphanumeric characters are letters and numbers.
+
+2. What does .isalnum() do?
+  isalnum() is a built-in python string method that checks whether a string only contains alphanumeric characters on is not empty
+
+Non-alphanumeric characters are: 
+Spaces, commas, periods, colons, !, @, # and similar symbols
+
+
+5. The DSA lesson to remember
+The same technique can solve different problems depending on what you do with the pointers.
+- Two pointers + swapping → reverse an array or list.
+- Two pointers + comparison → check a palindrome.
+- Two pointers + skipping unwanted characters → Valid Palindrome with spaces and punctuation.
+- Two pointers + comparing adjacent or sorted elements → other array and string problems.
