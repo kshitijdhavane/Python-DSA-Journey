@@ -1,3 +1,32 @@
+There are two important ways to traverse strings.
+1) character based traversal ----- for char in word:
+2) index based ----- for i in range(len(word)):
+
+#  String Slicing
+allows us to extract a portion of a string without using a loop.
+string[start : end]  start - included and end - excluded 
+
+## String Immutability and Built-in Methods
+
+word = "Hello Python"
+
+print(word.upper())       # HELLO PYTHON
+print(word.lower())       # hello python
+print(word.capitalize())  # Hello python
+print(word.title())       # Hello Python
+
+These are particularly useful in coding problems.
+Method	Purpose	Example
+.isalpha()	Checks whether all characters are letters	"abc".isalpha() → True
+.isdigit()	Checks whether all characters are digits	"123".isdigit() → True
+.isalnum()	Checks whether all characters are letters or digits	"abc123".isalnum() → True
+.isspace()	Checks whether all characters are whitespace	" ".isspace() → True
+.islower()	Checks whether all cased letters are lowercase	"hello".islower() → True
+.isupper()	Checks whether all cased letters are uppercase	"HELLO".isupper() → True
+
+
+
+
 1. What are alphanumeric characters?
 --- Alphanumeric characters are letters and numbers.
 
