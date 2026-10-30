@@ -1,4 +1,3 @@
-
 class Solution:
     def maxProfit(self, prices):
         min_price = prices[0]
@@ -14,5 +13,3 @@ class Solution:
                 max_profit = profit
 
         return max_profit
-
-
