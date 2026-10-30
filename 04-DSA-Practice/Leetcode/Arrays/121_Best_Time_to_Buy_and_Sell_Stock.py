@@ -16,11 +16,3 @@ class Solution:
         return max_profit
 
 
-# Local testing in VS Code
-if __name__ == "__main__":
-    solution = Solution()
-
-    prices = [7, 1, 5, 3, 6, 4]
-    result = solution.maxProfit(prices)
-
-    print("Maximum Profit:", result)
